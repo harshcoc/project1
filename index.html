@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="weather-container">
+    <h1>🌤️ Weather Forecast</h1>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button onclick="fetchWeather()">Search</button>
+    </div>
+
+    <div class="weather-info">
+      <p><strong>City:</strong> <span id="city">-</span></p>
+      <p><strong>Temperature:</strong> <span id="temp">-</span> °C</p>
+      <p><strong>Feels Like:</strong> <span id="feels_like">-</span> °C</p>
+      <p><strong>Description:</strong> <span id="desc">-</span></p>
+      <p><strong>Humidity:</strong> <span id="humidity">-</span>%</p>
+      <p><strong>Wind Speed:</strong> <span id="wind">-</span> km/h</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
